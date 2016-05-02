@@ -1,0 +1,24 @@
+{
+    "types": [
+        {
+            "id": 0,
+            "category": 0,
+            "name": "personal",
+            "description": "Fireworks intended for recreational use during holiday celebrations"
+        },
+        {
+        	"id": 1,
+        	"category": 1,
+        	"name": "industrial",
+        	"description": "Supplies for both large and small scale demolition projects"
+        },
+        {
+        	"id": 1,
+        	"category": 2,
+        	"name": "confidential",
+        	"description": "We are not liable for any legal issues that result from using these products"
+        }
+    ]
+}
+
+// Create a JSON file describing types for each category of your products. For each type, add a key/value pair that creates a relationship to the corresponding category. Create at least 3 types for each category.

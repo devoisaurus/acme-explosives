@@ -1,0 +1,60 @@
+{
+    "products": [
+        "fairy_sparklers": {
+            "id": 0,
+            "type": 0,
+            "name": "Fairy Sparklers",
+            "description": "Multi-colored sparklers that are safe for any age."
+        },
+        "shooting_stars": {
+        	"id": 1,
+        	"type": 0,
+        	"name": "Shooting Stars",
+        	"description": "Explodes into a fountain of sparkling stars."
+        },
+        "big_boom": {
+        	"id": 2,
+        	"type": 0,
+        	"Big Boom": "Makes lots of noise.  Visually unimpressive."
+        },
+        "small_building": {
+        	"id": 3,
+        	"type": 1,
+        	"name": "Small Building Explosives",
+        	"description": "Enough to level a small building, up to 3 floors."
+        },
+        "large_building": {
+        	"id": 4,
+        	"type": 1,
+        	"name": "Large Building Explosives",
+        	"description": "Can level a larger building, up to 20 floors."
+        },
+        "city_block": {
+        	"id": 5,
+        	"type": 1,
+        	"name": "City Block",
+        	"description": "Can decimate an entire city block. Must sign waiver."
+        },
+        "trogdor": {
+        	"id": 6,
+        	"type": 2,
+        	"name": "Trogdor the Burninator",
+        	"description": "*redacted*"
+        },
+        "castle_storm": {
+        	"id": 7,
+        	"type": 2,
+        	"name": "Think It'll Work?",
+        	"description": "Have fun storming the castle!"
+        },
+        "classified": {
+        	"id": 8,
+        	"type": 2,
+        	"name": "Classified",
+        	"description": "**Restricted Access**"
+        }
+    ]
+}
+
+
+// Create a JSON file describing each product you offer. Add a key/value pair that creates a relationship to the appropriate product type. Add at least 3 products for each type.
