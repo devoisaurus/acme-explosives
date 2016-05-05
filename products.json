@@ -1,60 +1,126 @@
 {
-    "products": [
+    "products": [{
         "fairy_sparklers": {
             "id": 0,
             "type": 0,
             "name": "Fairy Sparklers",
-            "description": "Multi-colored sparklers that are safe for any age."
+            "description": "Multi-colored sparklers that are safe for any age."}
         },
-        "shooting_stars": {
-        	"id": 1,
-        	"type": 0,
-        	"name": "Shooting Stars",
-        	"description": "Explodes into a fountain of sparkling stars."
+        { "smoke_bomb": {
+            "id": 1,
+            "type": 0,
+            "name": "Smoke Bomb",
+            "description": "Produces multi-colored smoke and little else"}
         },
-        "big_boom": {
-        	"id": 2,
-        	"type": 0,
-        	"Big Boom": "Makes lots of noise.  Visually unimpressive."
+        { "bottle_rocket": {
+            "id": 2,
+            "type": 0,
+            "name": "Bottle Rocket",
+            "description": "Launches into the air with a high pitched whistle, followed by a report"
+            }
         },
-        "small_building": {
+        {"shooting_stars": {
         	"id": 3,
         	"type": 1,
+        	"name": "Shooting Stars",
+        	"description": "Explodes into a fountain of sparkling stars."}
+        },
+        {"big_boom": {
+        	"id": 3,
+        	"type": 1,
+        	"name": "Big Boom",
+            "description": "Makes lots of noise.  Visually unimpressive."}
+        },
+        {"floating_lantern":{
+            "id": 4,
+            "type": 1,
+            "name": "Floating Lantern",
+            "description": "Floats in the air when lit, emitting a soft glow"
+            }
+        },
+        {"flying_dragon":{
+            "id": 5,
+            "type": 2,
+            "name": "Flying Dragon",
+            "description": "Giant flying dragon lighting up the sky"
+            }
+        },
+        {"one_hour_show":{
+            "id": 6,
+            "type": 2,
+            "name": "One Hour Show",
+            "description": "Hour-long programmed pyrotechnic display"
+            }
+        },
+        {"whole_shebang":{
+            "id": 7,
+            "type": 2,
+            "name": "The Whole Shebang",
+            "description": "Three-hour-long preprogrammed pyrotechnic display, very impressive!"
+            }
+        },
+        {"garage": {
+            "id": 8,
+            "type": 3,
+            "name": "Garage Demolition Kit",
+            "description": "Enough explosive power to destroy a two-car garage. Excellent for putting in that basement!"
+            }
+        },
+        {"backyard":{
+            "id": 9,
+            "type": 3,
+            "name": "Backyard Demo Pack",
+            "description": "Need a basement or a pool?  Use this kit to make the space!"
+            }
+        },
+        {"tiny_mines":{
+            "id": 10,
+            "type": 3,
+            "name": "Tiny Mines",
+            "description": "Kids won't stay off your lawn?  Tiny Mines can help! Not liable for damages, waiver required"
+            }
+        },
+        {"small_building": {
+        	"id": 11,
+        	"type": 4,
         	"name": "Small Building Explosives",
-        	"description": "Enough to level a small building, up to 3 floors."
+        	"description": "Enough to level a small building, up to 3 floors."}
         },
-        "large_building": {
-        	"id": 4,
-        	"type": 1,
+
+        {"large_building": {
+        	"id": 12,
+        	"type": 4,
         	"name": "Large Building Explosives",
-        	"description": "Can level a larger building, up to 20 floors."
+        	"description": "Can level a larger building, up to 20 floors."}
         },
-        "city_block": {
-        	"id": 5,
-        	"type": 1,
+
+        {"city_block": {
+        	"id": 12,
+        	"type": 4,
         	"name": "City Block",
-        	"description": "Can decimate an entire city block. Must sign waiver."
+        	"description": "Can decimate an entire city block. Must sign waiver."}
         },
-        "trogdor": {
+
+        {"trogdor": {
         	"id": 6,
-        	"type": 2,
+        	"type": 5,
         	"name": "Trogdor the Burninator",
-        	"description": "*redacted*"
+        	"description": "*redacted*"}
         },
-        "castle_storm": {
+
+        {"castle_storm": {
         	"id": 7,
-        	"type": 2,
+        	"type": 5,
         	"name": "Think It'll Work?",
-        	"description": "Have fun storming the castle!"
+        	"description": "Have fun storming the castle!"}
         },
-        "classified": {
+
+        {"classified": {
         	"id": 8,
-        	"type": 2,
+        	"type": 5,
         	"name": "Classified",
-        	"description": "**Restricted Access**"
-        }
-    ]
+        	"description": "**Restricted Access**"}
+        }]
 }
 
 
-// Create a JSON file describing each product you offer. Add a key/value pair that creates a relationship to the appropriate product type. Add at least 3 products for each type.
