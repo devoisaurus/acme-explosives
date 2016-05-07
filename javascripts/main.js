@@ -56,6 +56,7 @@ $(document).ready(function() {
 			return thirdXHR(data2);
 		}).then(function(data3){
 			products = data3.products;
+			organizeAcme();
 			populateDOM();
 		});
 
@@ -67,11 +68,31 @@ $(document).ready(function() {
 	}
 
 	function populateDOM(){
-		console.log("categories", categories);
-		console.log("products", products);
-		console.log("types", types);
-	}
+		let acme = $("#container-fluid");
+		acme.html("");
+		types.forEach(function(types){
+			acme.append(`<div class = "col-sm-9"><p class="types">${types.name}: ${types.description}</p></div>`);
+		});
+		products.forEach(function(product){
+			for(var key in product){
+			}
+			$(`<div class = "col-xs-8 col-sm-6"><p>${product[key].name} - ${product[key].description}</p></div>`).appendTo(".types");
+		});
 
+	}
+	function organizeAcme(){
+			products.forEach(function(product){
+				for(var key in product){
+					}
+					// console.log("type", types);
+				types.forEach(function(type){
+				if (product[key].type === type.id) {
+					product[key].type = type.name;
+				}
+				});
+				console.log("product", product);
+		});
+	}
 
 });
 
