@@ -55,43 +55,44 @@ $(document).ready(function() {
 			types = data2.types;
 			return thirdXHR(data2);
 		}).then(function(data3){
-			products = data3.products;
+			let products1 = data3.products;
+			products1.forEach(function(product){
+				products.push(product[Object.keys(product)[0]]);
+			});
 			organizeAcme();
-			populateDOM();
 		});
 
 	function populateDropdown(categories){
 		dropdownMenu.html("");
 		categories.forEach(function(cats){
-			dropdownMenu.append(`<option id="category${cats.id}">${cats.name}</option>`);
+			dropdownMenu.append(`<option value="${cats.id}">${cats.name}</option>`);
 		});
 	}
 
-	function populateDOM(){
+	function populateDOM(acmeArray){
 		let acme = $("#container-fluid");
 		acme.html("");
-		types.forEach(function(types){
-			acme.append(`<div class = "col-sm-9"><p class="types">${types.name}: ${types.description}</p></div>`);
+		// categories.forEach(function(categories){
+		// 	acme.append(`<div class = "col-md-12"><h2>${categories.name}</h2></div>`);
+		// });
+		// types.forEach(function(types){
+		// 	$(`<div class = "col-md-9"><h4 class="types">${types.name}: ${types.description}</h4></div>`).appendTo(".col-md-12");
+		// });
+		acmeArray.forEach(function(product){
+			$(`<div class = "col-md-6"><p>${product.name} - ${product.description}</p></div>`).appendTo(acme);
 		});
-		products.forEach(function(product){
-			for(var key in product){
-			}
-			$(`<div class = "col-xs-8 col-sm-6"><p>${product[key].name} - ${product[key].description}</p></div>`).appendTo(".types");
-		});
-
 	}
+
 	function organizeAcme(){
-			products.forEach(function(product){
-				for(var key in product){
-					}
-					// console.log("type", types);
-				types.forEach(function(type){
-				if (product[key].type === type.id) {
-					product[key].type = type.name;
-				}
-				});
-				console.log("product", product);
+		let finalProducts = products;
+		finalProducts.forEach(function(finalProduct){
+			finalProduct.typeInfo = types[finalProduct.type];
+			finalProduct.categoryInfo = categories[finalProduct.typeInfo.category];
+			// console.log("categoryInfo", );
+
 		});
+		// console.log("finalProducts", finalProducts);
+		populateDOM(finalProducts);
 	}
 
 });

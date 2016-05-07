@@ -1,7 +1,11 @@
-.col-sm-9 {
+.col-md-12 {
+	border: 3px solid black;
+}
+
+.col-md-9 {
 	border: 2px solid black;
 }
 
-.col-sm-6 {
+.col-md-6 {
 	border:  1px solid black;
 }
